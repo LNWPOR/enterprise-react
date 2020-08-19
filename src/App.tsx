@@ -1,7 +1,14 @@
 import React, { FC } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import PostsApp from './posts/PostsApp';
 
 const App: FC = () => {
-  return <div>App</div>;
+  return (
+    <Router>
+      <PostsApp></PostsApp>
+    </Router>
+  );
 };
 
 export default App;
