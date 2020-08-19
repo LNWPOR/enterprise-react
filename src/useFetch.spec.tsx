@@ -1,11 +1,10 @@
 import axios from 'axios';
-import { mocked } from 'ts-jest/utils';
 
 import useFetch from './useFetch';
 import { renderHook } from '@testing-library/react-hooks';
 
 jest.mock('axios');
-const mockedAxios = mocked(axios, true);
+const mockedAxios = axios as jest.Mocked<typeof axios>;
 
 type Item = Readonly<{
   id: number;
