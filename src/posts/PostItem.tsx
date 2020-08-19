@@ -4,9 +4,13 @@ import axios from 'axios';
 
 import { Post } from './types/Post';
 
+type RouteParams = {
+  id: string;
+};
+
 const PostItem: FC = () => {
   const [post, setPost] = useState<Post>();
-  const { id } = useParams();
+  const { id } = useParams<RouteParams>();
 
   useEffect(() => {
     const fetchPost = async () => {
