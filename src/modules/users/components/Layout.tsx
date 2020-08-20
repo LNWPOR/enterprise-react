@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, lazy } from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
-import UserList from './UserList';
+const UserList = lazy(() => import('./UserList'));
 
 const Layout: FC = () => {
   const { path } = useRouteMatch();

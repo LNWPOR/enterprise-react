@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, lazy } from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
-import TodoList from './TodoList';
+const TodoList = lazy(() => import('./TodoList'));
 
 const Layout: FC = () => {
   const { path } = useRouteMatch();
