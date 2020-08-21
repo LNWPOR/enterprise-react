@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 
 import { Todo } from './types';
 
@@ -10,4 +10,4 @@ const TodoItem: FC<Props> = ({ todo }) => {
   return <li>{todo.text}</li>;
 };
 
-export default TodoItem;
+export default memo<Props>(TodoItem) as typeof TodoItem;
