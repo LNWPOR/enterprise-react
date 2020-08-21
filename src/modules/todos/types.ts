@@ -14,18 +14,18 @@ export enum TodoActionTypes {
   LOAD_TODOS_FAILURE = 'app/todos/LOAD_TODOS_FAILURE',
 }
 
-export type TodoRequestAction = {
+export type TodosRequestAction = {
   type: TodoActionTypes.LOAD_TODOS_REQUEST;
 };
 
-export type TodoSuccessAction = {
+export type TodosSuccessAction = {
   type: TodoActionTypes.LOAD_TODOS_SUCCESS;
   payload: {
     todos: Todo[];
   };
 };
 
-export type TodoFailureAction = {
+export type TodosFailureAction = {
   type: TodoActionTypes.LOAD_TODOS_FAILURE;
   payload: {
     message: string;
@@ -33,6 +33,6 @@ export type TodoFailureAction = {
 };
 
 export type TodoActions =
-  | TodoRequestAction
-  | TodoSuccessAction
-  | TodoFailureAction;
+  | TodosRequestAction
+  | TodosSuccessAction
+  | TodosFailureAction;

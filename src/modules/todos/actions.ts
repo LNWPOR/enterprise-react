@@ -2,25 +2,25 @@ import axios from 'axios';
 
 import { AppThunk } from 'modules/actions';
 import {
-  TodoRequestAction,
-  TodoSuccessAction,
-  TodoFailureAction,
+  TodosRequestAction,
+  TodosSuccessAction,
+  TodosFailureAction,
   TodoActionTypes,
   Todo,
 } from './types';
 
-const loadTodosRequest = (): TodoRequestAction => ({
+const loadTodosRequest = (): TodosRequestAction => ({
   type: TodoActionTypes.LOAD_TODOS_REQUEST,
 });
 
-const loadTodosSuccess = (todos: Todo[]): TodoSuccessAction => ({
+const loadTodosSuccess = (todos: Todo[]): TodosSuccessAction => ({
   type: TodoActionTypes.LOAD_TODOS_SUCCESS,
   payload: {
     todos,
   },
 });
 
-const loadTodosFailure = (message: string): TodoFailureAction => ({
+const loadTodosFailure = (message: string): TodosFailureAction => ({
   type: TodoActionTypes.LOAD_TODOS_FAILURE,
   payload: {
     message,

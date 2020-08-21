@@ -15,18 +15,18 @@ export enum UserActionTypes {
   LOAD_USERS_FAILURE = 'app/users/LOAD_USERS_FAILURE',
 }
 
-export type UserRequestAction = {
+export type UsersRequestAction = {
   type: UserActionTypes.LOAD_USERS_REQUEST;
 };
 
-export type UserSuccessAction = {
+export type UsersSuccessAction = {
   type: UserActionTypes.LOAD_USERS_SUCCESS;
   payload: {
     users: User[];
   };
 };
 
-export type UserFailureAction = {
+export type UsersFailureAction = {
   type: UserActionTypes.LOAD_USERS_FAILURE;
   payload: {
     message: string;
@@ -34,6 +34,6 @@ export type UserFailureAction = {
 };
 
 export type UserActions =
-  | UserRequestAction
-  | UserSuccessAction
-  | UserFailureAction;
+  | UsersRequestAction
+  | UsersSuccessAction
+  | UsersFailureAction;
