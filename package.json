@@ -24,7 +24,15 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "use-debounce": "^3.4.3",
-    "yup": "^0.29.1"
+    "yup": "^0.29.1",
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^1.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "react-app-rewired": "^2.1.6",
+    "redux-devtools-extension": "^2.13.8",
+    "query-string": "6.13.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -46,14 +54,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-import": "^1.13.0",
-    "customize-cra": "^1.0.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "react-app-rewired": "^2.1.6",
-    "redux-devtools-extension": "^2.13.8"
   }
 }
